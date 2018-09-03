@@ -235,7 +235,7 @@ public class ModelNewWolf extends Model {
 	 */
 	public void setLivingAnimations(EntityLivingBase entitylivingbaseIn, float limbSwing, float limbSwingAmount, float partialTickTime)
 	{
-		EntityWolf wolf = (EntityWolf)entitylivingbaseIn;
+		EntityWolf entitywolf = (EntityWolf)entitylivingbaseIn;
 
 		if (!entitywolf.isTamed())
 		{
