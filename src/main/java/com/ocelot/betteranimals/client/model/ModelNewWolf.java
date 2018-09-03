@@ -250,10 +250,12 @@ public class ModelNewWolf extends Model {
 		if(entity instanceof EntityWolf) {
 			EntityWolf wolf = (EntityWolf) entity;
 			if(wolf.isSitting()) {
-				this.body.rotateAngleX = -1;
-				this.tail01.rotateAngleX = 1;
+				this.body.rotateAngleX = -1F;
+				this.tail01.rotateAngleX = 0F;
+				this.chest.rotateAngleX = -0.3F;
 			}else {
 				this.body.rotateAngleX = 0;
+				this.chest.rotateAngleX = 0;
 			}
 		}
 	}
