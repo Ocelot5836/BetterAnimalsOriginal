@@ -1,8 +1,8 @@
-package ocelot.betteranimals.client.model;
+package com.ocelot.betteranimals.client.model;
 
 import org.lwjgl.opengl.GL11;
 
-import ocelot.betteranimals.client.model.Model;
+import com.ocelot.betteranimals.client.model.Model;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
@@ -73,7 +73,7 @@ public class ModelNewBear extends Model {
 	public ModelRenderer rForeClaw04;
 	public ModelRenderer rForeClaw05;
 
-	public ModelBear() {
+	public ModelNewBear() {
 		this.textureWidth = 128;
 		this.textureHeight = 128;
 		this.lEar02 = new ModelRenderer(this, 45, 42);
@@ -380,10 +380,8 @@ public class ModelNewBear extends Model {
 
 	@Override
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) { 
-    this.hind.render(f5);
+		this.hind.render(f5);
 	}
-
-
 
 	@Override
 	public void setRotationAngles(float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw,
@@ -404,6 +402,7 @@ public class ModelNewBear extends Model {
 		super.setRotationAngles(limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch, scaleFactor, entityIn);
 	}
 
+
 	/**
 	 * This is a helper function from Tabula to set the rotation of model parts
 	 */
@@ -413,4 +412,3 @@ public class ModelNewBear extends Model {
 		modelRenderer.rotateAngleZ = z;
 	}
 }
-

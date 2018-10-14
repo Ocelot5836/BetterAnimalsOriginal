@@ -1,4 +1,4 @@
-package com.ocelot.betteranimals.client.render;
+package com.ocelot.betteranimals.client.render.entity;
 
 import com.ocelot.betteranimals.client.model.ModelNewSpider;
 
@@ -28,7 +28,6 @@ public class RenderNewCaveSpider extends RenderLiving<EntityCaveSpider> implemen
 			GlStateManager.rotate(-90, 1, 0, 0);
 			GlStateManager.translate(0.0F, 0.75F, -0.5F);
 		}
-		GlStateManager.translate(0, 0.7, 0);
 		GlStateManager.scale(0.5, 0.5, 0.5);
 	}
 
